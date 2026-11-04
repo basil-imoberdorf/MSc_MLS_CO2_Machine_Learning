@@ -5,7 +5,7 @@ Master course project (CO2, Machine Learning – Data Challenge 2023).
 Multiclass classification of seven dry bean varieties (Seker, Barbunya, Bombay, Cali, Horoz, Sira, Dermason) from 16 shape and size features extracted from images of 13,611 grains (Koklu & Ozkan, 2020).
 
 ![Per-class test-set results of the models tested in this work](Final_Result_BarChart.png)
-*Per-class results of the models tested in this work.*
+*Per-class recall on the test set of the models tested in this work.*
 
 ## Content
 
@@ -21,7 +21,7 @@ The notebook covers:
 4. **PCA:** effect of dimensionality reduction on model performance
 5. **Ensemble voting classifier** and comparison of per-class test accuracy
 
-**Main finding:** all models confused the same classes (mainly Sira vs. Dermason, and Barbunya), so the voting ensemble gained little. The colour of the beans was not among the extracted features, and adding it would probably make Barbunya easy to separate.
+**Main finding:** all models perform practically equally well (overall test accuracy 91.5–92.5 %, within the cross-validation scatter). They all confused the same classes (mainly Sira vs. Dermason, and Barbunya), so the voting ensemble gained little. The colour of the beans was not among the extracted features, and adding it would probably make Barbunya easy to separate.
 
 ## Files
 
